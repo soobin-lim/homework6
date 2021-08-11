@@ -105,6 +105,7 @@ var allbtns = document.querySelectorAll('button');
 for(const button of allbtns){
   if(button.innerHTML!='Search'){
     button.addEventListener('click', function(){
+      document.querySelector("#inputcityname").value = '';
       weather2.getFiveDaysForecast(this.textContent);
       weather.getOnedayForecast(this.textContent);
     })
