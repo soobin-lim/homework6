@@ -88,6 +88,10 @@ let weather2 = {
 
 document.querySelector("#searchbtn").addEventListener("click", function(){
   var cityname = document.querySelector("#inputcityname").value;
+    if (cityname == ''){
+      alert('cityname is empty');
+      return;
+    }
     weather2.getFiveDaysForecast(cityname);
     weather.getOnedayForecast(cityname);
 });
@@ -95,6 +99,10 @@ document.querySelector("#searchbtn").addEventListener("click", function(){
 document.querySelector("#inputcityname").addEventListener("keyup", function(event){
   if (event.key == "Enter") {
     var cityname = document.querySelector("#inputcityname").value;
+    if (cityname == ''){
+      alert('cityname is empty');
+      return;
+    }
     weather2.getFiveDaysForecast(cityname);
     weather.getOnedayForecast(cityname);
   }
