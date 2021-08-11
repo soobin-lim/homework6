@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather Dashboard</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1 id='bigtitle'>Weather Dashboard</h1>
+    </header>
+
+    <main>
+
+      <aside>
+        <h1>Search for a City: </h1>
+        <input type="text" id='inputcityname'></input>
+        <button id='searchbtn'>Search</button>
+        <hr />
+        <button>Austin</button>
+        <button>Chicago</button>
+        <button>New York</button>
+        <button>Orlando</button>
+        <button>San Francisco</button>
+        <button>Seattle</button>
+        <button>Denver</button>
+        <button>Atlanta</button>
+      </aside>
+
+      <section id='weathers'>
+
+        <div id='informationcard'>
+          <div class='inrow'>
+            <h1 id='informationcard_name_of_city'></h1>
+            <img id='informationcard_name_of_city_icon' />
+          </div>
+          <h2 id='informationcard_temp'></h2>
+          <h2 id='informationcard_wind'></h2>
+          <h2 id='informationcard_humidity'></h2>
+          <h2 id='informationcard_uvindex'></h2>
+        </div>
+
+        <h2 id='fivedayh2'>5-Day Forecast:</h2>
+
+        <div class="weathercards">
+          
+          </section>
+        </div>
+
+      </section>
+    </main>
+  <script src="script.js"></script>
+  </body>
+</html>
